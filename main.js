@@ -2,7 +2,62 @@
  * YOUR CODE BELOW! *
  ********************/
 
+function moreThan5(a) {
+  return a > 5;
+}
 
+function topScore(b, c) {
+  return b > c;
+}
+
+function isInDanger(d) {
+  return 71 >= d && d >= 60;
+}
+
+function isCoasting(e) {
+  return 83 >= e && e >= 72;
+}
+
+function isSucceeding(e) {
+  return 92 >= e && e >= 84;
+}
+
+
+function isFailing(f) {
+  return f < 60;
+}
+
+function isAcing(g) {
+  return g > 92;
+}
+
+function isStudent(pupil) {
+  return pupil === "student";  
+}
+
+function isTeacher(listenBoy) {
+  return listenBoy === "teacher";  
+}
+
+function isAdmin(boss) {
+  return boss === "admin";  
+}
+
+function isElementary(grade) {
+  return grade === "elementary";
+}
+
+function areDifferentPeople(name1, name2) {
+  return name1 !== name2;
+}
+
+function isMiddleSchoolTeacher(title, grade) {
+  return title === "teacher" && grade <= 8 && grade >= 6;
+}
+
+function notAnElementarySchoolAdministrator(level, role) {
+  return level !== "elementary" || role !== "admin";
+}
 
 
 
@@ -57,8 +112,8 @@ if (typeof isElementary === 'undefined') {
   isElementary = undefined;
 }
 
-if (typeof differentPeople === 'undefined') {
-  differentPeople = undefined;
+if (typeof areDifferentPeople === 'undefined') {
+  areDifferentPeople = undefined;
 }
 
 if (typeof notAnElementarySchoolAdministrator === 'undefined') {
@@ -82,7 +137,7 @@ module.exports = {
   isTeacher,
   isAdmin,
   isElementary,
-  differentPeople,
+  areDifferentPeople,
   notAnElementarySchoolAdministrator,
   isMiddleSchoolTeacher,
 }
